@@ -63,7 +63,7 @@ progress {
 
 html {
   /* Set the font globally */
-  font-family: var(--sans-font);
+  font-family: var(--serif-font);
   scroll-behavior: smooth;
 }
 
@@ -89,7 +89,6 @@ body > header {
   text-align: center;
   padding: 0 0.5rem 2rem 0.5rem;
   grid-column: 1 / -1;
-  color: #C00000;
 }
 
 body > header > *:only-child {
@@ -123,6 +122,7 @@ body > footer {
 /* Format headers */
 h1 {
   font-size: 3rem;
+  color: #C00000;
 }
 
 h2 {
