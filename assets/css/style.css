@@ -826,7 +826,7 @@ div.notice p:last-of-type {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 23px;
-  color: #ffffff;
+  color: var(--text);
   display: block;
   border-bottom: solid 1px #000000;
   font-family: "Georgia", serif;
