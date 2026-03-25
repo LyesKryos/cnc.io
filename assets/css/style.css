@@ -104,7 +104,6 @@ body > header {
   grid-column: 1 / -1;
   font-family: "Engravers MT", serif;
   font-size: 1rem;
-  margin-left: 200px;
 }
 
 body > header > *:only-child {
