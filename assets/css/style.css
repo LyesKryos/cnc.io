@@ -65,6 +65,8 @@ html {
   /* Set the font globally */
   font-family: Georgia, serif;
   scroll-behavior: smooth;
+  display: flex;
+  padding-left: 15%;
 }
 
 .content-wrapper {
@@ -86,9 +88,11 @@ body {
   background-color: var(--bg);
   font-size: 1.15rem;
   line-height: 1.5;
-  display: flex;          /* outer shell is now a flex row */
+  display: flex;
   flex-direction: column;
-  margin: 25px 340px 0 180px;
+  width: min(1200px, 100vw);
+  margin: 2% 0;
+  padding: 0 1rem;
   text-align: justify;
 }
 
@@ -100,10 +104,12 @@ body > * {
 body > header {
   background-color: var(--bg);
   text-align: center;
-  padding: 0 0.5rem -1rem 0.5rem;
   grid-column: 1 / -1;
   font-family: "Engravers MT", serif;
   font-size: 1rem;
+  align-items: center;
+  padding-left: 15%;
+  padding-top: 1%;
 }
 
 body > header > *:only-child {
@@ -805,7 +811,7 @@ div.notice p:last-of-type {
 
 /* The sidenav stays fixed-width and sticky */
 .sidenav {
-  width: 200px;
+  width: 15%;
   flex-shrink: 0;
   position: sticky;
   top: 0;
