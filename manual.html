@@ -27,17 +27,30 @@
                 <a href="faq">FAQ</a>
           </nav>
           <div class="main">
-            <h2>Manual</h2>
+            <h2 id="top">Manual</h2>
               <p>While the Command & Conquest system may seem complicated at first glance, the game boils down to a few concepts. Each concept will be covered in this Manual; any questions you may have might be addressed by the FAQ or by a moderator. </p>
-              <h4 id="nations">Nations</h4>
-              <p>Each player controls a nation, united by common government, creed, culture, or other socioeconomic factors.
-                  These nations consist of <b>Citizens</b>, each who contribute to and rely on the nation. Primarily,
-                  Citizens contribute to the nation through <b>Production</b> and <b>Taxation</b> while requiring the state to spend
-                  <b>Authority</b> to keep them happy and contented. Nations can field <b>Military</b> forces to protect their
-                  interests, <b>Economic</b> tools to further their national welfare, <b>Diplomatic</b> agents to ensure the nation’s
-                  international respect, and <b>Political</b> authority to keep the nation’s internal workings smooth.</p>
-              <p>Each nation is displayed uniquely on the <b>Map</b>, using their specific color.</p>
-              <h4 id="authority">Authority</h4>
+              <h4 id="nations">NATIONS</h4>
+                  <p>Each player controls a nation, united by common government, creed, culture, or other socioeconomic factors.
+                      These nations consist of <b>Citizens</b>, who contribute to and rely on the nation. Primarily,
+                      Citizens contribute to the nation through <b>Production</b> and <b>Taxation</b> while requiring the state to spend
+                      <b>Authority</b> to keep them happy and contented. Nations can field <b>Military</b> forces to protect their
+                      interests, <b>Economic</b> tools to further their national welfare, <b>Diplomatic</b> agents to ensure the nation’s
+                      international respect, and <b>Political</b> authority to keep the nation’s internal workings smooth.</p>
+                  <p>Each nation is displayed uniquely on the <b>Map</b>, using their specific color.</p>
+              <h4 id="provinces">PROVINCES</h4>
+                  <p>Provinces are the subnational divisions representing historical, cultural, social, and geographical divisions within the nation. Each province is a separate entity, represented on the <b>Map</b> with an assigned alphanumeric identifier. 
+                      Provinces also have unique names, which can be altered by the owner as desired. Provinces have assigned Terrain, Trade Goods, Core Owner and Occupier, Citizenry, and Structures.</p>
+                  <p><b>Terrain</b> represents the average geography within the Province. There are six (6) terrain types, each with unique structures, movement costs, and combat modifiers. See Battle and Sieges for Terrain effects on combat.</p>
+                  <ul>
+                      <li><b>Plains</b> are any combination of grasslands, scrublands, sparse forests, and coastlands. The Plain terrain unique building is the <b>Farm</b>, which increases the Citizenry growth within the province by 5%. A Farm costs three (3) Economic authority to construct.</li>
+                      <li><b>Deserts</b> are wide, dry, sand-covered areas, dotted with dunes and the occasional oasis. The Desert terrain unique building is the <b>Trading Post</b>, which increases the value of the local Trade Good of the Province. This building effect replaces any effect gained from a <b>Port</b> in that Province. A Trading Post costs four (4) Economic authority to construct.</li>
+                      <li><b>Hills</b> heave earth into rolling formations ranging from small mounds to towering foothills beneath mountain ranges. The Hills unique building is the <b>Quarry</b>, which boosts the Trade Good Production per Citizen by 10% in the Province. 
+                          This building effect replaces any effect gained from a <b>Manufactory</b> in the Province. A Quarry costs four (4) Economic authority to construct.</li>
+                      <li><b>Swamps</b> form festering, damp regions, full of decaying vegetation and brackish water. The Swamp unique building is the <b>Lumber Mill</b>, which reduces the cost of Development boosting by 15% in the Province. A Lumber Mill costs four (4) Economic Authority to construct.</li>
+                      <li><b>Mountains</b> tower above the earth, stretching to the sky and providing substantial geographical obstacles. The Mountain unique building is the <b>Mine</b>, which directly adds 0.5 Economic authority to the owning nation. A Mine costs seven (7) Economic authority to construct.</li>
+                      <li><b>Arctic</b> land is windswept and snow-covered tundra, inhospitable to all but the most hardy people. The Arctic unique building is the <b>Fishery</b>, which boosts national Taxation effectiveness by 1%. A Fishery costs five (5) Economic authority to construct.</li>
+                  </ul>
+              <h4 id="authority">AUTHORITY</h4>
                   <p>Authority is how players make use of their nation’s resources within the game.
                       Each authority type is fixed by certain dynamic features of a nation, rising and falling with the
                       power, technology, diplomatic weight, and other such factors. Each turn, the authority meters are
@@ -48,11 +61,11 @@
                           buildings, recruit new military units, provide public services, and otherwise spend the national wealth. Nations earn Economic authority primarily through <b>Trade</b>, <b>Taxation</b>, and <b>Buildings</b>.</p>
                       <p><b>Trade</b> is the most effective source of Economic authority. Each Citizen contributes a certain amount of Production value each turn.
                           A province's Production determines the amount of the local <b>Trade Good</b> produced. Each Trade Good has a market value that fluctuates based on availability and total Production each turn.
-                          The total Production of all Trade Goods of a nation multiplied by the market value is a nation's <b>Trade Value</b>, to which each nation has only limited access to.
-                          Trade Value is accessed by signing <b>Trade Pacts</b> with other nations (see Diplomacy). Each nation begins with 5% access, and each Trade Pact increases access by a further 5%.
+                          The total Production of all Trade Goods of a nation multiplied by the market value is a nation's <b>Trade Value</b>, to which each nation has only limited access.
+                          Trade Value is gained by signing <b>Trade Pacts</b> with other nations (see Diplomacy). Each nation begins with 5% access, and each Trade Pact increases access by a further 5%.
                           The total Trade Value that a nation has access to contributes to the overall Economic authority of that nation.</p>
                       <p><b>Taxation</b> is the most direct source of Economic authority.
-                          The average Development (see Development) level of a nation is taxed according to their <b>Tax Level</b>.
+                          The average Development (see Development) level of a nation is taxed according to its <b>Tax Level</b>.
                           A nation's base Tax Level is set by their Government Subtype and can only be changed by expending Political authority (see Government and Politics).
                           Take care not to over-tax your Citizens, as doing so will rapidly increase National Unrest.
                       </p>
@@ -68,6 +81,29 @@
                           Political Authority is gained through Diplomatic Relations, Development, and Technology.</p>
                       <p><b>Diplomatic Relations</b> provide Political authority for both member nations on an exponential curve; the more Diplomatic Relations a nation maintains, the greater its Politial authority gain.</p>
                       <p><b>Development</b> has a strong impact on a nation's total Political authority. High average Development will provide a nation with plenty of Political authority. However, this is mitigated by National Unrest (see Government and Politics).</p>
+              <h4 id="diplomacy">DIPLOMACY</h4>
+                  <p>Diplomacy is the primary vehicle through which nations communicate their wishes to one another. Each Diplomacy action requires the expenditure of some Authority, generally Political or Military.
+                      Diplomatic actions are divided into <b>Cooperative</b> and <b>Hostile</b> actions. Cooperative actions include: establishing Diplomatic Relations, joining a Military Alliance, negotiating Military Access, and opening Trade Pacts. 
+                      Hostile actions include: issuing Embargoes and Declaring War. A nation cannot maintain both Cooperative and Hostile diplomacy simultaneously.</p>
+                  <h5>Cooperative Relations</h5>
+                      <p><b>Diplomatic Relations</b> are peaceful agreements between nations, generally representing recognition of normal relations or national sovereignty. 
+                          Diplomatic Relations increase a nation's Political authority, but cost one Political authority initially to issue and accept.</p>
+                      <p><b>Military Alliances</b> align nations together, enabling members to create a defensive or offensive pact against enemies. Such alliances can maintain up to five (5) members, and a nation may only be a member of a single alliance at a time. 
+                          Military Alliances cost one Political authority to issue and accept; additionally, they cost one Political authority per member per turn to maintain.</p>
+                      <p><b>Military Access Agreements</b> are agreements that permit members to move their Armies across territory owned by the members without restriction, including landing and embarking troops from their territory. 
+                          These agreements cost one Political authority to issue and accept.</p>
+                      <p><b>Trade Pacts</b> establish economic agreements between nations, increasing the Trade Value access for both. Each Trade Pact increases the economic power of a nation. 
+                          Trade Pacts cost one Political authority to issue and accept; additionally, they cost one Political authority to maintain.</p>
+                  <h5>Hostile Relations</h5>
+                      <p><B>Embargoes</B> officially sanction enemy nations, reducing the target's Trade Value access. Multiple Embargoes against a single nation exponentially increase in impact, meaning a global pariah may find itself economically depressed. 
+                          Embaroges cost one Political authority to issue; additionally, they cost one Political authority to maintain.</p>
+                      <p><b>Declarations of War</b> are official pronouncements beginning a military conflict between two nations. Each Declaration of War includes a specific Casus Belli; defenders may declare a Defensio Belli. 
+                          Once war has been declared, Armies from either side may begin marching into enemy territory, capturing provinces, battling, and besieging Forts. Each victory earns War Score, which contributes to the ability of a nation to demand concessions during peace negotiations. 
+                          For more, see War. Nations in Military Alliances may not declare war on one another. Nations in Military Alliances may call their allies to war, either defensively or offensively.</p>
+                      <p><b>Subjugation</b> permits some nations to exert their power over others. Subjugation results in the subjugated nation becoming a puppet of its overlord, transferring a fourth of its authority to its overlord (minimum one). Puppets cannot join Military Alliances other than their overlord's and are automatically called into their overlord's conflicts. 
+                          Subject nations may attempt to declare independence from their overlord, but must then defeat them in war. Overlords may also expend authority to confiscate provinces from their puppets for one (1) Political authority for every ten (10) Development in the Province. 
+                          Overlords may also force their puppets to conform to their Government Type, for fifteen (15) Political authority, or their Government Subtype (if they are already of the same Government Type), for seven (7) Political authority. 
+                          Because of the vast resources required to maintain overlordship over entire peoples, nations may only maintain two puppets at any time. Overlords may voluntarily release their puppets at any time, beginning a 12-turn Truce. Subjugation does not cost any Authority to maintain for the Overlord.</p>
 
           </div>
         </div>
