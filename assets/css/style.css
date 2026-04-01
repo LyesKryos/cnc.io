@@ -220,11 +220,12 @@ h3 {
 /* Format links & buttons */
 a,
 a:visited {
-  color: var(--accent);
+  color: #db4e4e;
 }
 
 a:hover {
   text-decoration: none;
+  background: black;
 }
 
 button,
