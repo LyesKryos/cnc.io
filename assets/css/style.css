@@ -171,10 +171,12 @@ h3 {
 
 h4 {
   font-size: 1.44rem;
+  border-bottom: 1px solid var(--border);
 }
 
 h5 {
   font-size: 1.15rem;
+    border-bottom: 1px dotted var(--border);
 }
 
 h6 {
