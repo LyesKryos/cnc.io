@@ -96,7 +96,6 @@ document.querySelectorAll('.mobile-menu a').forEach(link => {
   z-index: 1000000; pointer-events: none;
   font-family: sans-serif;
 }
-img[data-lb] { cursor: zoom-in !important; }
 `;
 
   const style = document.createElement('style');
@@ -186,6 +185,10 @@ img[data-lb] { cursor: zoom-in !important; }
     if (e.target === backdrop || e.target.id === '_lb-inner') close();
   });
 
+  img.addEventListener('click', e => {
+    e.stopPropagation();
+  });
+
   document.addEventListener('keydown', e => {
     if (!backdrop.classList.contains('open')) return;
     if (e.key === 'Escape') close();
@@ -202,6 +205,7 @@ img[data-lb] { cursor: zoom-in !important; }
     baseTx = tx; baseTy = ty;
     img.classList.add('grabbing');
     e.preventDefault();
+    e.stopPropagation();
   });
   window.addEventListener('mousemove', e => {
     if (!dragging) return;
@@ -253,7 +257,11 @@ img[data-lb] { cursor: zoom-in !important; }
     if (el._lbInit) return;
     el._lbInit = true;
     el.setAttribute('data-lb', '');
-    el.addEventListener('click', () => {
+    el.style.setProperty('cursor', 'zoom-in', 'important');
+    el.style.setProperty('pointer-events', 'auto', 'important');
+    el.addEventListener('click', e => {
+      e.preventDefault();
+      e.stopPropagation();
       gather();
       const i = images.indexOf(el);
       if (i !== -1) open(i);
