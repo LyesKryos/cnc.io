@@ -138,6 +138,7 @@
                   <h5 id="government-type">Government Type</h5>
                       <p>Government Type determines several aspects of a nation’s existence. Government Type determines the base gain of Economic, Military, and Political Authority. Additionally, it determines any modifiers to Unrest gain, Manpower access, and Development Cost for Provinces.</p>
                       <table style="border-collapse: collapse; font-family: Georgia, sans-serif; color: black;">
+                          <caption style="color:white;">Government Types and Subtypes</caption>
                           <thead>
                             <tr>
                               <th style="background-color: #bfc3d3;">Government Type</th>
@@ -278,7 +279,7 @@
                         </tr>
                         </tbody>
                       </table>
-                      <table style="border-collapse: collapse; font-family: Georgia, sans-serif; color: black;">
+                      <table style="border-collapse: collapse; font-family: Georgia, serif; color: black;">
                         <caption style="color:white;">Government Subtype Unique Effects</caption>
                         <thead>
                         <tr>
@@ -439,7 +440,167 @@
                           If a nation has more than 20% of its Provinces (minimum 5) occupied by rebel forces for more than six turns, the rebels declare victory, and the government is overthrown according to the nature of the conflict. </p>
                       <p>A <b>Rebellion</b> is a violent attempt by the Citizenry to enforce their demands on the Government. A Rebellion can occur when National Unrest is at or above 50. If a Rebellion is successful, the national Taxation level will be reduced to 5%, the Manpower level will be reduced by 10%, each Authority will be reduced by one, and Government Modification will be disabled. These effects will last for ten (10) turns.</p>
                       <p>A <b>Civil War</b> is an attempt by the Citizenry to alter the Government Subtype of a nation. A Civil War can occur when National Unrest is at or above 65. If a Civil War is successful, the Government Subtype will be changed according to the type of Civil War sparked. Civil Wars can only alter the Subtype within the current Government Type of the nation. Additionally, each Authority will be reduced by two (2) for four (4) turns.</p>
-                      <p>A <b>Revolution</b> is an attempt by the Citizenry to alter the Government Type of a nation. A Revolution can occur when National Unrest is at or above 70 or when changing Government Type or Subtype. If a Revolution is successful, the Government Type will be changed according to the type of Revolution sparked. Additionally, each Authority will be reduced by two (2) for five (5) turns. Revolution is the only method by which a nation may become Anarchic or remove the Anarchic government type.</p>
+                      <p>A <b>Revolution</b> is an attempt by the Citizenry to alter the Government Type of a nation. A Revolution can occur when National Unrest is at or above 70 or when changing Government Type or Subtype. If a Revolution is successful, the Government Type will be changed according to the type of Revolution sparked. Additionally, each Authority will be reduced by two (2) for five (5) turns. Revolution is the only method by which a nation may become Anarchic or remove the Anarchic government type.</p>\
+              <h4 id="war">WAR</h4>
+                  <p>When diplomacy has failed, it becomes necessary for nations to arm their citizens, march onto the battlefield, and make war against their enemies. In Command & Conquest, making war is an integral part of gameplay. Nations maintain Armies with assigned Troops and Generals which are used to fight enemy forces, besiege Forts, and capture Provinces. Once the war is complete, the combatants must complete Peace Negotiations to end the conflict.</p>
+                  <h5 id="declaring-war">Declaring War</h4>]
+                      <p>When a nation must declare war, it must declare a Casus Belli to justify the war and give it direction. Each Casus Belli provides bonuses to war score based on specific actions during the war, falling into three categories: capturing provinces, winning battles, and successful sieges. 
+                          Each Casus Belli also has a purpose, which helps the nation decide which option to choose. All Casus Belli, however, have limitations that prohibit victors from demanding specific negotiations. Defenders may declare a <b>Defensio Belli</b> in return to gain war score.</p>
+                      <table style="border-collapse: collapse; font-family: Georgia, serif; color: black;">
+                        <caption>Casus and Defensio Belli</caption>
+                        <tr>
+                            <td style="background-color: #bfc3d3;">Casus Belli</td>
+                            <td style="background-color: #bfc3d3;">War Goal</td>
+                            <td style="background-color: #bfc3d3;">Purpose</td>
+                            <td style="background-color: #bfc3d3;">Notes</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #EDEDED;">Conquest</td>
+                            <td style="background-color: #EDEDED;">Capture Provinces</td>
+                            <td style="background-color: #EDEDED;">Take Provinces</td>
+                            <td style="background-color: #EDEDED;">Force Government Type prohibited</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #ffffff;">Subjugate</td>
+                            <td style="background-color: #ffffff;">Capture Provinces</td>
+                            <td style="background-color: #ffffff;">Subjugate nation</td>
+                            <td style="background-color: #ffffff;">Force Government Type prohibited</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #EDEDED;">Indoctrinate</td>
+                            <td style="background-color: #EDEDED;">Win battles, capture Capital</td>
+                            <td style="background-color: #EDEDED;">Force Government Type</td>
+                            <td style="background-color: #EDEDED;">Take Province, Subjugate prohibited</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #ffffff;">Force Reparations</td>
+                            <td style="background-color: #ffffff;">Win battles</td>
+                            <td style="background-color: #ffffff;">Demand Reparations</td>
+                            <td style="background-color: #ffffff;">Take Province, Subjugate, Force Government Type prohibited</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #EDEDED;">Humiliate</td>
+                            <td style="background-color: #EDEDED;">Capture Capital, win battles</td>
+                            <td style="background-color: #EDEDED;">Reduce GP score<br>Increase Unrest</td>
+                            <td style="background-color: #EDEDED;">Take Province, Subjugate, Force Government Type prohibited</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #ffffff;">Trade Conflict</td>
+                            <td style="background-color: #ffffff;">Win battles</td>
+                            <td style="background-color: #ffffff;">End Embargo<br>Steal Authority<br>End Trade Pacts</td>
+                            <td style="background-color: #ffffff;">Take Province, Subjugate, Force Government Type prohibited</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #EDEDED;">Rebel Against Overlord</td>
+                            <td style="background-color: #EDEDED;">Win battles, capture Capital</td>
+                            <td style="background-color: #EDEDED;">Gain independence</td>
+                            <td style="background-color: #EDEDED;">Take Province, Subjugate, Force Government Type prohibited</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #ffffff;">Force Independence</td>
+                            <td style="background-color: #ffffff;">Win battles, capture Capital</td>
+                            <td style="background-color: #ffffff;">Force Overlord to release Puppet</td>
+                            <td style="background-color: #ffffff;">Take Province, Subjugate, Force Government Type prohibited</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #EDEDED;">Suppress the Revolution</td>
+                            <td style="background-color: #EDEDED;">Capture Capital, win battles</td>
+                            <td style="background-color: #EDEDED;">Overthrow Equalist government</td>
+                            <td style="background-color: #EDEDED;">Take Province prohibited<br>Non-Equalist/anarchist nations only</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #ffffff;">Spread the Revolution</td>
+                            <td style="background-color: #ffffff;">Capture Capital, win battles</td>
+                            <td style="background-color: #ffffff;">Install Equalist government</td>
+                            <td style="background-color: #ffffff;">Take Province prohibited<br>Equalist nations only</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #EDEDED;">Total War</td>
+                            <td style="background-color: #EDEDED;">Capture Provinces, win battles</td>
+                            <td style="background-color: #EDEDED;">Dismantle nation</td>
+                            <td style="background-color: #EDEDED;">Force Government Type prohibited</td>
+                        </tr>
+                      </table>
+                      <p>Defenders can choose the unique <b>Status Quo</b> Defensio Belli, which seeks to end the war without significant alterations. 
+                          The Status Quo has no War Goal and does not provide increased war score for victories. However, Status Quo provides a ticking increase in War Score every Turn while the attacker’s War Score stays below 60%.</p>
+                  <h5 id="peace">Peace Negotiations</h5>
+                      <p>When belligerents wish to end their war, they must enter Peace Negotiations. Peace Negotiations between the War Leaders will end the war for all participants; Peace Negotiations between one War Leader and other members will end the war only for that nation. 
+                          Peace Negotiation demands targeting co-belligerents rather than a War Leader cost twice as much. Peace Negotiations can demand any combination of options that are not prohibited by the Casus Belli. Should the War Score of the primary War Leader reach 100%, demands issued by that War Leader to their opposing War Leader shall be automatically accepted. 
+                          However, demands in an automatic Peace Negotiation cannot exceed the War Score. Co-belligerents cannot be forced to accept a Peace Negotiation.</p>
+                      <p><b>War Score</b> is a representation of how well (or poorly) a war is going for either side. Each Casus Belli and Defensio Belli has a War Goal, which designates certain victories during the war as more valuable than others. Every victorious Battle, captured Province, and successfully besieged Fort increases the War Score. 
+                          Achieving War Goals, however, increases the War Score earned from that victory.</p>
+                      <p><b>Truces</b> are periods during which nations agree to cease all hostile action. During a Truce, nations may not declare war without incurring a serious National Unrest penalty and the severing of all Diplomatic Relations. Truces are calculated based on the War Score at the end of a conflict; every 10% War Score will add another turn to the Truce duration, with a minimum of two turns. 
+                          Additionally, each Peace Negotiation adds another four (4) turns to the Truce duration. The Subjugate and Dismantle Peace Negotiation options carry a flat 20-turn Truce and 28-turn Truce, respectively.</p>
+                      <p><b>Durations</b> of Truces determine the number of turns that Peace Negotiations are enforced. End Embargo, End Military Alliance, and End Trade Pacts restrict the target from starting new Embargoes, Military Alliances, or Trade Pacts, respectively, for six (6) turns or the length of the Truce, whichever is shorter. 
+                          Demand Reparations lasts for the duration of the Truce or twelve (12) turns, whichever is shorter. Humiliate effects last for sixteen (16) turns, and Dismantle effects last for twenty (20) turns.</p>
+                      <table style="border-collapse: collapse; font-family: Georgia, serif; color: black;">
+                        <caption>Peace Negotiation Options and War Scores</caption>
+                        <tr>
+                            <td style="background-color: #bfc3d3;">Peace Negotiation</td>
+                            <td style="background-color: #bfc3d3;">Outcome</td>
+                            <td style="background-color: #bfc3d3;">War Score Cost</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #EDEDED;">White Peace</td>
+                            <td style="background-color: #EDEDED;">Establishes a Status Quo Ante Bellum</td>
+                            <td style="background-color: #EDEDED;">None</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #ffffff;">Cede Province</td>
+                            <td style="background-color: #ffffff;">Transfers Core Ownership to War Leader</td>
+                            <td style="background-color: #ffffff;">0.5% per Development</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #EDEDED;">Give Province</td>
+                            <td style="background-color: #EDEDED;">Transfers Core Ownership to specified nation</td>
+                            <td style="background-color: #EDEDED;">1% per Development</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #ffffff;">Demand Reparations</td>
+                            <td style="background-color: #ffffff;">Takes up to six of any Authority each turn</td>
+                            <td style="background-color: #ffffff;">5% per Authority taken</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #EDEDED;">End Embargo</td>
+                            <td style="background-color: #EDEDED;">Ends an existing Embargo by the target nation</td>
+                            <td style="background-color: #EDEDED;">10% war score</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #ffffff;">End Military Alliance</td>
+                            <td style="background-color: #ffffff;">Forcibly removes target nation from an existing Military Alliance</td>
+                            <td style="background-color: #ffffff;">15% war score</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #EDEDED;">End Trade Pacts</td>
+                            <td style="background-color: #EDEDED;">Forcibly ends all Trade Pacts for the target nation</td>
+                            <td style="background-color: #EDEDED;">20% war score</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #ffffff;">Subjugate</td>
+                            <td style="background-color: #ffffff;">Forcibly Subjugates the target nation</td>
+                            <td style="background-color: #ffffff;">2% per Development (minimum 25%)</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #EDEDED;">End Overlordship</td>
+                            <td style="background-color: #EDEDED;">Forcibly ends any Overlordship by the target nation</td>
+                            <td style="background-color: #EDEDED;">20% war score</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #ffffff;">Force Government Type</td>
+                            <td style="background-color: #ffffff;">Forcibly alters the target’s Government Type (not Subtype) to the War Leader’s Government Type. A random Subtype is selected.</td>
+                            <td style="background-color: #ffffff;">50% war score</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #EDEDED;">Humiliate</td>
+                            <td style="background-color: #EDEDED;">Reduces Great Power Score by 100, decreases stability by 35, and increases National Unrest by 25.</td>
+                            <td style="background-color: #EDEDED;">75% war score</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #ffffff;">Dismantle</td>
+                            <td style="background-color: #ffffff;">Reduces army size cap, prohibits Colonization, prohibits Government Modification, reduces each Authority by three</td>
+                            <td style="background-color: #ffffff;">90% war score</td>
+                        </tr>
+                    </table>
           </div>
         </div>
     </body>
