@@ -25,7 +25,10 @@ document.querySelectorAll('.mobile-menu a').forEach(link => {
 (function () {
   if (document.getElementById('_lb-style')) return;
 
-  const css = `
+  // ── Styles ──────────────────────────────────────────────────────────────────
+  const style = document.createElement('style');
+  style.id = '_lb-style';
+  style.textContent = `
 #_lb-backdrop {
   position: fixed; inset: 0;
   background: rgba(0,0,0,0.85);
@@ -47,7 +50,6 @@ document.querySelectorAll('.mobile-menu a').forEach(link => {
   transform-origin: 0 0;
   will-change: transform;
   display: block;
-  transition: opacity 0.15s;
 }
 #_lb-img.grabbing { cursor: grabbing; }
 ._lb-btn {
@@ -58,9 +60,8 @@ document.querySelectorAll('.mobile-menu a').forEach(link => {
   width: 40px; height: 40px;
   display: flex; align-items: center; justify-content: center;
   cursor: pointer; font-size: 20px; line-height: 1;
-  z-index: 1000000;
-  transition: background 0.15s;
-  font-family: sans-serif;
+  z-index: 1000000; transition: background 0.15s;
+  font-family: sans-serif; padding: 0;
 }
 ._lb-btn:hover { background: rgba(255,255,255,0.25); }
 #_lb-close { top: 14px; right: 14px; font-size: 16px; }
@@ -77,8 +78,7 @@ document.querySelectorAll('.mobile-menu a').forEach(link => {
   width: 34px; height: 30px;
   cursor: pointer; font-size: 16px;
   display: flex; align-items: center; justify-content: center;
-  font-family: sans-serif;
-  transition: background 0.15s;
+  font-family: sans-serif; transition: background 0.15s; padding: 0;
 }
 ._lb-zbtn:hover { background: rgba(255,255,255,0.25); }
 #_lb-reset { width: 42px; font-size: 11px; letter-spacing: 0.02em; }
@@ -87,68 +87,62 @@ document.querySelectorAll('.mobile-menu a').forEach(link => {
   color: rgba(255,255,255,0.65); font-size: 13px;
   white-space: nowrap; max-width: 80vw;
   overflow: hidden; text-overflow: ellipsis;
-  z-index: 1000000; pointer-events: none;
-  font-family: sans-serif;
+  z-index: 1000000; pointer-events: none; font-family: sans-serif;
 }
 #_lb-counter {
   position: fixed; top: 16px; left: 50%; transform: translateX(-50%);
   color: rgba(255,255,255,0.5); font-size: 13px;
-  z-index: 1000000; pointer-events: none;
-  font-family: sans-serif;
+  z-index: 1000000; pointer-events: none; font-family: sans-serif;
 }
 `;
-
-  const style = document.createElement('style');
-  style.id = '_lb-style';
-  style.textContent = css;
   document.head.appendChild(style);
 
+  // ── Markup ───────────────────────────────────────────────────────────────────
   const backdrop = document.createElement('div');
   backdrop.id = '_lb-backdrop';
   backdrop.innerHTML = `
     <div id="_lb-inner">
       <img id="_lb-img" draggable="false" alt="" />
     </div>
-    <button class="_lb-btn" id="_lb-close" title="Close (Esc)">✕</button>
-    <button class="_lb-btn" id="_lb-prev" title="Previous (←)">‹</button>
-    <button class="_lb-btn" id="_lb-next" title="Next (→)">›</button>
+    <button class="_lb-btn" id="_lb-close" title="Close (Esc)">&#x2715;</button>
+    <button class="_lb-btn" id="_lb-prev"  title="Previous (arrow left)">&#x2039;</button>
+    <button class="_lb-btn" id="_lb-next"  title="Next (arrow right)">&#x203A;</button>
     <div id="_lb-zoom-row">
-      <button class="_lb-zbtn" id="_lb-zout" title="Zoom out (-)">−</button>
+      <button class="_lb-zbtn" id="_lb-zout"  title="Zoom out (-)">&#x2212;</button>
       <button class="_lb-zbtn" id="_lb-reset" title="Reset (0)">1:1</button>
-      <button class="_lb-zbtn" id="_lb-zin" title="Zoom in (+)">+</button>
+      <button class="_lb-zbtn" id="_lb-zin"   title="Zoom in (+)">+</button>
     </div>
     <div id="_lb-caption"></div>
-    <div id="_lb-counter"></div>
-  `;
+    <div id="_lb-counter"></div>`;
   document.body.appendChild(backdrop);
 
-  const img = document.getElementById('_lb-img');
-  const cap = document.getElementById('_lb-caption');
+  const lbImg   = document.getElementById('_lb-img');
+  const cap     = document.getElementById('_lb-caption');
   const counter = document.getElementById('_lb-counter');
+  const inner   = document.getElementById('_lb-inner');
+  const btnPrev = document.getElementById('_lb-prev');
+  const btnNext = document.getElementById('_lb-next');
 
-  let images = [], cur = 0, scale = 1, tx = 0, ty = 0;
+  // ── State ────────────────────────────────────────────────────────────────────
+  let items = [], cur = 0;
+  let scale = 1, tx = 0, ty = 0;
   let dragging = false, startX = 0, startY = 0, baseTx = 0, baseTy = 0;
   let lastPinchDist = null, lastPinchScale = 1;
 
+  // ── Core ─────────────────────────────────────────────────────────────────────
   function setTransform() {
-    img.style.transform = `translate(${tx}px,${ty}px) scale(${scale})`;
+    lbImg.style.transform = `translate(${tx}px,${ty}px) scale(${scale})`;
   }
-
   function resetView() { scale = 1; tx = 0; ty = 0; setTransform(); }
 
-  function gather() {
-    images = Array.from(document.querySelectorAll('img[data-lb]'));
-  }
-
-  function open(i) {
-    gather();
+  function openAt(i) {
     cur = i;
     resetView();
-    img.src = images[i].src;
-    cap.textContent = images[i].alt || images[i].title || '';
-    counter.textContent = images.length > 1 ? `${i + 1} / ${images.length}` : '';
-    document.getElementById('_lb-prev').style.display = images.length > 1 ? '' : 'none';
-    document.getElementById('_lb-next').style.display = images.length > 1 ? '' : 'none';
+    lbImg.src = items[i].src;
+    cap.textContent = items[i].alt || items[i].title || '';
+    counter.textContent = items.length > 1 ? `${i + 1} / ${items.length}` : '';
+    btnPrev.style.display = items.length > 1 ? '' : 'none';
+    btnNext.style.display = items.length > 1 ? '' : 'none';
     backdrop.classList.add('open');
     document.body.style.overflow = 'hidden';
   }
@@ -156,56 +150,55 @@ document.querySelectorAll('.mobile-menu a').forEach(link => {
   function close() {
     backdrop.classList.remove('open');
     document.body.style.overflow = '';
-    img.src = '';
+    lbImg.src = '';
   }
 
   function go(dir) {
-    cur = (cur + dir + images.length) % images.length;
-    open(cur);
+    cur = (cur + dir + items.length) % items.length;
+    openAt(cur);
   }
 
   function zoom(factor, pivotX, pivotY) {
-    const newScale = Math.min(Math.max(scale * factor, 0.25), 10);
+    const next = Math.min(Math.max(scale * factor, 0.25), 10);
     if (pivotX !== undefined) {
-      tx -= pivotX * (newScale - scale);
-      ty -= pivotY * (newScale - scale);
+      tx -= pivotX * (next - scale);
+      ty -= pivotY * (next - scale);
     }
-    scale = newScale;
+    scale = next;
     setTransform();
   }
 
-  document.getElementById('_lb-close').onclick = close;
-  document.getElementById('_lb-prev').onclick = () => go(-1);
-  document.getElementById('_lb-next').onclick = () => go(1);
-  document.getElementById('_lb-zin').onclick = () => zoom(1.3);
-  document.getElementById('_lb-zout').onclick = () => zoom(1 / 1.3);
-  document.getElementById('_lb-reset').onclick = resetView;
+  // ── Buttons ──────────────────────────────────────────────────────────────────
+  document.getElementById('_lb-close').onclick  = close;
+  btnPrev.onclick = () => go(-1);
+  btnNext.onclick = () => go(1);
+  document.getElementById('_lb-zin').onclick    = () => zoom(1.3);
+  document.getElementById('_lb-zout').onclick   = () => zoom(1 / 1.3);
+  document.getElementById('_lb-reset').onclick  = resetView;
 
   backdrop.addEventListener('click', e => {
-    if (e.target === backdrop || e.target.id === '_lb-inner') close();
+    if (e.target === backdrop || e.target === inner) close();
   });
+  lbImg.addEventListener('click', e => e.stopPropagation());
 
-  img.addEventListener('click', e => {
-    e.stopPropagation();
-  });
-
+  // ── Keyboard ─────────────────────────────────────────────────────────────────
   document.addEventListener('keydown', e => {
     if (!backdrop.classList.contains('open')) return;
-    if (e.key === 'Escape') close();
-    if (e.key === 'ArrowLeft') go(-1);
-    if (e.key === 'ArrowRight') go(1);
-    if (e.key === '+' || e.key === '=') zoom(1.2);
-    if (e.key === '-') zoom(1 / 1.2);
-    if (e.key === '0') resetView();
+    if (e.key === 'Escape')                   close();
+    else if (e.key === 'ArrowLeft')           go(-1);
+    else if (e.key === 'ArrowRight')          go(1);
+    else if (e.key === '+' || e.key === '=')  zoom(1.2);
+    else if (e.key === '-')                   zoom(1 / 1.2);
+    else if (e.key === '0')                   resetView();
   });
 
-  img.addEventListener('mousedown', e => {
+  // ── Mouse drag ───────────────────────────────────────────────────────────────
+  lbImg.addEventListener('mousedown', e => {
     dragging = true;
     startX = e.clientX; startY = e.clientY;
     baseTx = tx; baseTy = ty;
-    img.classList.add('grabbing');
-    e.preventDefault();
-    e.stopPropagation();
+    lbImg.classList.add('grabbing');
+    e.preventDefault(); e.stopPropagation();
   });
   window.addEventListener('mousemove', e => {
     if (!dragging) return;
@@ -215,80 +208,103 @@ document.querySelectorAll('.mobile-menu a').forEach(link => {
   });
   window.addEventListener('mouseup', () => {
     dragging = false;
-    img.classList.remove('grabbing');
+    lbImg.classList.remove('grabbing');
   });
 
-  document.getElementById('_lb-inner').addEventListener('wheel', e => {
+  // ── Scroll-to-zoom ───────────────────────────────────────────────────────────
+  inner.addEventListener('wheel', e => {
     e.preventDefault();
-    const rect = img.getBoundingClientRect();
-    const ox = (e.clientX - rect.left) / scale;
-    const oy = (e.clientY - rect.top) / scale;
-    zoom(e.deltaY < 0 ? 1.12 : 1 / 1.12, ox, oy);
+    const rect = lbImg.getBoundingClientRect();
+    zoom(
+      e.deltaY < 0 ? 1.12 : 1 / 1.12,
+      (e.clientX - rect.left) / scale,
+      (e.clientY - rect.top)  / scale
+    );
   }, { passive: false });
 
-  document.getElementById('_lb-inner').addEventListener('touchstart', e => {
+  // ── Pinch-to-zoom ────────────────────────────────────────────────────────────
+  inner.addEventListener('touchstart', e => {
     if (e.touches.length === 2) {
-      lastPinchDist = Math.hypot(
+      lastPinchDist  = Math.hypot(
         e.touches[0].clientX - e.touches[1].clientX,
         e.touches[0].clientY - e.touches[1].clientY
       );
       lastPinchScale = scale;
     }
   }, { passive: true });
-
-  document.getElementById('_lb-inner').addEventListener('touchmove', e => {
-    if (e.touches.length === 2) {
-      e.preventDefault();
-      const dist = Math.hypot(
-        e.touches[0].clientX - e.touches[1].clientX,
-        e.touches[0].clientY - e.touches[1].clientY
-      );
-      scale = Math.min(Math.max(lastPinchScale * (dist / lastPinchDist), 0.25), 10);
-      setTransform();
-    }
+  inner.addEventListener('touchmove', e => {
+    if (e.touches.length !== 2) return;
+    e.preventDefault();
+    const dist = Math.hypot(
+      e.touches[0].clientX - e.touches[1].clientX,
+      e.touches[0].clientY - e.touches[1].clientY
+    );
+    scale = Math.min(Math.max(lastPinchScale * (dist / lastPinchDist), 0.25), 10);
+    setTransform();
   }, { passive: false });
+  inner.addEventListener('touchend', () => { lastPinchDist = null; });
 
-  document.getElementById('_lb-inner').addEventListener('touchend', () => {
-    lastPinchDist = null;
-  });
-
-  // Auto-init: observe DOM for images, apply data-lb and click handlers
-  function initImage(el) {
-    if (el._lbInit) return;
-    el._lbInit = true;
-    el.setAttribute('data-lb', '');
-    el.style.setProperty('cursor', 'zoom-in', 'important');
-    el.style.setProperty('pointer-events', 'auto', 'important');
-    el.addEventListener('click', e => {
-      e.preventDefault();
-      e.stopPropagation();
-      gather();
-      const i = images.indexOf(el);
-      if (i !== -1) open(i);
-    });
-  }
-
-  function shouldInclude(el) {
-    // Skip tiny icons, 1px tracking pixels, etc.
-    const w = el.naturalWidth || el.width;
-    const h = el.naturalHeight || el.height;
-    if (w > 0 && w < 64) return false;
-    if (h > 0 && h < 64) return false;
-    // Skip images inside <a> that go somewhere (let the link handle it)
-    const parent = el.closest('a[href]');
-    if (parent) return false;
+  // ── Image attachment ─────────────────────────────────────────────────────────
+  function isBig(el) {
+    if (el.naturalWidth  > 0 && el.naturalWidth  < 64) return false;
+    if (el.naturalHeight > 0 && el.naturalHeight < 64) return false;
+    const r = el.getBoundingClientRect();
+    if (r.width  > 0 && r.width  < 48) return false;
+    if (r.height > 0 && r.height < 48) return false;
     return true;
   }
 
-  function scanImages() {
-    document.querySelectorAll('img').forEach(el => {
-      if (!el._lbInit && shouldInclude(el)) initImage(el);
+  function isEligible(el) {
+    if (el === lbImg) return false;
+    if (el.closest('#_lb-backdrop')) return false;
+    if (el.closest('a[href]')) return false;
+    if (!isBig(el)) return false;
+    return true;
+  }
+
+  function markReady(el) {
+    if (!isEligible(el)) return;
+    el.setAttribute('data-lb-ready', '');
+    // Set cursor directly on the element's style so it wins over any stylesheet
+    el.style.cursor = 'zoom-in';
+  }
+
+  function attach(el) {
+    if (el._lbInit) return;
+    el._lbInit = true;
+
+    // Try to mark immediately if already loaded, else wait
+    if (el.complete && el.naturalWidth > 0) {
+      markReady(el);
+    } else {
+      el.addEventListener('load', () => markReady(el), { once: true });
+      // Also try after a short delay in case 'load' already fired
+      setTimeout(() => markReady(el), 200);
+    }
+
+    el.addEventListener('click', e => {
+      if (!el.hasAttribute('data-lb-ready')) return;
+      e.preventDefault();
+      e.stopPropagation();
+      items = Array.from(document.querySelectorAll('img[data-lb-ready]'));
+      const i = items.indexOf(el);
+      if (i !== -1) openAt(i);
     });
   }
 
-  scanImages();
+  function scan() {
+    document.querySelectorAll('img').forEach(el => {
+      if (!el._lbInit) attach(el);
+    });
+  }
 
-  // Watch for dynamically added images
-  const observer = new MutationObserver(() => scanImages());
-  observer.observe(document.body, { childList: true, subtree: true });
+  scan();
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', scan);
+  }
+  window.addEventListener('load', scan);
+
+  // Re-scan whenever the DOM changes (React, lazy loaders, etc.)
+  new MutationObserver(scan).observe(document.body, { childList: true, subtree: true });
+
 })();
