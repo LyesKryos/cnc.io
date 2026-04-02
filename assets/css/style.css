@@ -14,7 +14,7 @@
   --accent-bg: #f5f7ff;
   --text: #212121;
   --text-light: #585858;
-  --border: #898EA4;
+  --border: #1f1f1f;
   --accent: #9a2f2f;
   --accent-hover: #9a2f2f;
   --accent-text: var(--bg);
@@ -171,12 +171,12 @@ h3 {
 
 h4 {
   font-size: 1.44rem;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid aliceblue;
 }
 
 h5 {
   font-size: 1.15rem;
-    border-bottom: 1px dotted var(--border);
+    border-bottom: 1px dotted aliceblue;
 }
 
 h6 {
@@ -446,6 +446,7 @@ details h2:first-of-type {
 table {
   border-collapse: collapse;
   margin: 1.5rem 0;
+  max-width: 100%;
 }
 
 figure > table {

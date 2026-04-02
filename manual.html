@@ -114,7 +114,7 @@
                           Trade Pacts cost one Political authority to issue and accept; additionally, they cost one Political authority to maintain.</p>
                   <h5>Hostile Relations</h5>
                       <p><B>Embargoes</B> officially sanction enemy nations, reducing the target's Trade Value access. Multiple Embargoes against a single nation exponentially increase in impact, meaning a global pariah may find itself economically depressed. 
-                          Embaroges cost one Political authority to issue; additionally, they cost one Political authority to maintain.</p>
+                          Embargoes cost one Political authority to issue; additionally, they cost one Political authority to maintain.</p>
                       <p><b>Declarations of War</b> are official pronouncements beginning a military conflict between two nations. Each Declaration of War includes a specific Casus Belli; defenders may declare a Defensio Belli. 
                           Once war has been declared, Armies from either side may begin marching into enemy territory, capturing provinces, battling, and besieging Forts. Each victory earns War Score, which contributes to the ability of a nation to demand concessions during peace negotiations. 
                           For more, see War. Nations in Military Alliances may not declare war on one another. Nations in Military Alliances may call their allies to war, either defensively or offensively.</p>
@@ -123,372 +123,325 @@
                           Overlords may also force their puppets to conform to their Government Type, for fifteen (15) Political authority, or their Government Subtype (if they are already of the same Government Type), for seven (7) Political authority. 
                           Because of the vast resources required to maintain overlordship over entire peoples, nations may only maintain two puppets at any time. Overlords may voluntarily release their puppets at any time, beginning a 12-turn Truce. Subjugation does not cost any Authority to maintain for the Overlord.</p>
               <h4 id="government">GOVERNMENT <i>and</i> POLITICS</h4>
-                  <p>No nation can exist without a government to run it. Each nation will have unique approaches to governing its people, and the nations of Command & Conquest are no different. Each nation has a <b>Government Type</b> and <b>Subtype</b>, each with specific special properties. 
-                      Nations can alter their Government Type and Subtype voluntarily or through a Civil War or Revolution, which are caused or avoided by properly managed National Unrest and Stability.</p>
+                  <p>No nation can exist without a government to run it. Each nation will have unique approaches to governing its people, and the nations of Command & Conquest are no different. Each nation has government controls that modify <b>Taxataion, Public Spending, Military Upkeep,</b> and <b>Stability</b>.
+                      Each also nation has a <b>Government Type</b> and <b>Subtype</b>, each with specific special properties. Nations can alter their Government Type and Subtype voluntarily or through a Civil War or Revolution, which are caused or avoided by properly managed National Unrest and Stability.</p>
+                  <h5 id="government-modification">Government Modification</h5>
+                      <p>Many aspects of government are crucial to the smooth operation of a nation. Each must be carefully balanced to ensure the peace and security of the nation.</p>
+                      <p><b>Taxation</b> targets the economic wealth of a nation to provide her government with resources to defend, expand, and develop. Taxation provides one of the primary sources for Economic authority (see Economic Authority). Taxation directly increases National Unrest, so keeping it too high for extended periods of time will cause trouble.</p>
+                      <p><b>Public Spending</b> is a measure of how much a government is willing to invest to ensure that Citizens’ lives are healthy, enjoyable, and productive. Public Spending costs Economic authority each turn to maintain. Public Spending reduces National Unrest on an exponential scale based on the amount of Economic authority invested. Nations may invest up to ten (10) Economic Authority per turn on Public Spending. </p>
+                      <p><b>Military Upkeep</b> supports the ongoing efforts of every nation to maintain and equip their soldiery. Military Upkeep consumes Military authority each turn to provide a nation’s military with an edge over their opponents and enemies, providing exponential benefits to the fighting ability of each soldier.
+                          However, lax Military Upkeep investment will result in a lackluster fighting force. Nations may use up to ten (10) Military authority per turn on Military Upkeep.</p>
+                      <p><b>Stability</b> represents how safe, secure, and strong a nation is from the perspective of her Citizenry. A nation that has Military Alliances, a strong army, and a healthy economy will encourage more Citizens to immigrate and build families. Stability directly impacts the rate of Citizenry Growth in Provinces.
+                          Stability can be boosted by investing up to ten (10) Political authority per turn. Stability cannot be artificially boosted beyond 80 stability.</p>
+                      <p>A <b>Capital Province</b> can be assigned by a nation’s government to centralize their operations and gain the benefits of a Capital Province. A Capital Province automatically builds a Fort in the Province. A Capital Province reduces the cost of Development investment by 15%, increases the Citizen Growth impact in that Province by 10%, and decreases National Unrest by five (5) points.
+                          Capturing a Capital Province during a war will grant the Occupier more war score. During National Unrest uprisings, the Capital Province will not be occupied by rebels. Designating a Capital Province costs seven (7) Political Authority and maintaining a Capital Province costs one (1) Political Authority per turn. A Capital Province cannot be designated or changed while at war.</p>
                   <h5 id="government-type">Government Type</h5>
                       <p>Government Type determines several aspects of a nation’s existence. Government Type determines the base gain of Economic, Military, and Political Authority. Additionally, it determines any modifiers to Unrest gain, Manpower access, and Development Cost for Provinces.</p>
-                      <style type="text/css">
-                        .tg  {border-collapse:collapse;border-spacing:0;}
-                        .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-                          overflow:hidden;padding:10px 5px;word-break:normal;}
-                        .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-                          font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-                        .tg .tg-cly1{background-color:light-grey;text-align:left;vertical-align:middle}
-                        .tg .tg-rijp{background-color:#A8D08D;text-align:left;vertical-align:top}
-                        .tg .tg-pal7{background-color:#A8D08D;text-align:left;vertical-align:middle}
-                        .tg .tg-of53{background-color:#FFC000;text-align:left;vertical-align:top}
-                        .tg .tg-mfxt{background-color:#ffffff;border-color:inherit;text-align:left;vertical-align:middle}
-                        .tg .tg-0lax{text-align:left;vertical-align:top}
-                        .tg .tg-nqld{background-color:#E9C37F;text-align:left;vertical-align:middle}
-                        .tg .tg-z3q7{background-color:#E9C37F;text-align:left;vertical-align:top}
-                        .tg .tg-h2sn{background-color:#FFC000;text-align:left;vertical-align:middle}
-                        .tg .tg-1frd{background-color:#8EAADB;text-align:left;vertical-align:middle}
-                        .tg .tg-241j{background-color:#8EAADB;text-align:left;vertical-align:top}
-                        .tg .tg-hrzr{background-color:#E00;text-align:left;vertical-align:middle}
-                        .tg .tg-gfk9{background-color:#E00;text-align:left;vertical-align:top}
-                        .tg .tg-frlw{background-color:#D0CECE;text-align:left;vertical-align:middle}
-                        .tg .tg-8i8s{background-color:#D0CECE;text-align:left;vertical-align:top}
-                        </style>
-                        <table class="tg"><thead>
-                          <tr>
-                            <th class="tg-mfxt">   <br><span style="color:black">Government Type</span>   </th>
-                            <th class="tg-cly1">&nbsp;&nbsp;&nbsp;<br><span style="color:black">Subtype</span>&nbsp;&nbsp;&nbsp;</th>
-                            <th class="tg-cly1">&nbsp;&nbsp;&nbsp;<br><span style="color:black">Economic</span>&nbsp;&nbsp;&nbsp;</th>
-                            <th class="tg-cly1">&nbsp;&nbsp;&nbsp;<br><span style="color:black">Military</span>&nbsp;&nbsp;&nbsp;</th>
-                            <th class="tg-cly1">&nbsp;&nbsp;&nbsp;<br><span style="color:black">Political</span>&nbsp;&nbsp;&nbsp;</th>
-                            <th class="tg-cly1">&nbsp;&nbsp;&nbsp;<br><span style="color:black">Unrest</span>&nbsp;&nbsp;&nbsp;</th>
-                            <th class="tg-cly1">&nbsp;&nbsp;&nbsp;<br><span style="color:black">Manpower</span>&nbsp;&nbsp;&nbsp;</th>
-                            <th class="tg-cly1">&nbsp;&nbsp;&nbsp;<br><span style="color:black">Development Cost</span>&nbsp;&nbsp;&nbsp;</th>
-                            <th class="tg-0lax">&nbsp;&nbsp;&nbsp;<br><span style="color:black">Tax Level</span>&nbsp;&nbsp;&nbsp;</th>
-                          </tr>
+                      <table style="border-collapse: collapse; font-family: Georgia, sans-serif; color: black;">
+                          <thead>
+                            <tr>
+                              <th style="background-color: #bfc3d3;">Government Type</th>
+                              <th style="background-color: #bfc3d3;">Subtype</th>
+                              <th style="background-color: #bfc3d3;">Economic</th>
+                              <th style="background-color: #bfc3d3;">Military</th>
+                              <th style="background-color: #bfc3d3;">Political</th>
+                              <th style="background-color: #bfc3d3;">Unrest</th>
+                              <th style="background-color: #bfc3d3;">Manpower</th>
+                              <th style="background-color: #bfc3d3;">Development Cost</th>
+                              <th style="background-color: #bfc3d3;">Tax Level</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr style="background-color: #7e4901;">
+                              <td>Tribal</td><td>Pre-Feudal</td><td>3</td><td>4</td><td>3</td><td>100%</td><td>10%</td><td>115%</td><td>3%</td>
+                            </tr>
+                            <tr style="background-color: #FFC000;">
+                              <td>Monarchy</td><td>Absolute</td><td>2</td><td>4</td><td>4</td><td>110%</td><td>12%</td><td>100%</td><td>8%</td>
+                            </tr>
+                            <tr style="background-color: #FFC000;">
+                              <td>Monarchy</td><td>Constitutional</td><td>3</td><td>3</td><td>4</td><td>95%</td><td>11%</td><td>100%</td><td>4%</td>
+                            </tr>
+                            <tr style="background-color: #FFC000;">
+                              <td>Monarchy</td><td>Feudal</td><td>3</td><td>4</td><td>3</td><td>100%</td><td>10%</td><td>100%</td><td>6%</td>
+                            </tr>
+                            <tr style="background-color: #FFC000;">
+                              <td>Monarchy</td><td>Theocratic</td><td>1</td><td>1</td><td>8</td><td>100%</td><td>10%</td><td>110%</td><td>3%</td>
+                            </tr>
+                            <tr style="background-color: #FFC000;">
+                              <td>Monarchy</td><td>Elective</td><td>2</td><td>3</td><td>5</td><td>108%</td><td>12%</td><td>95%</td><td>3%</td>
+                            </tr>
+                            <tr style="background-color: #8EAADB;">
+                              <td>Republic</td><td>Patrician</td><td>3</td><td>2</td><td>5</td><td>100%</td><td>10%</td><td>95%</td><td>5%</td>
+                            </tr>
+                            <tr style="background-color: #8EAADB;">
+                              <td>Republic</td><td>Confederal</td><td>1</td><td>2</td><td>7</td><td>90%</td><td>10%</td><td>105%</td><td>6%</td>
+                            </tr>
+                            <tr style="background-color: #8EAADB;">
+                              <td>Republic</td><td>Crowned</td><td>2</td><td>4</td><td>4</td><td>95%</td><td>11%</td><td>100%</td><td>8%</td>
+                            </tr>
+                            <tr style="background-color: #8EAADB;">
+                              <td>Republic</td><td>Federal</td><td>4</td><td>3</td><td>3</td><td>95%</td><td>10%</td><td>100%</td><td>5%</td>
+                            </tr>
+                            <tr style="background-color: #8EAADB;">
+                              <td>Republic</td><td>Unitary</td><td>2</td><td>2</td><td>6</td><td>95%</td><td>9%</td><td>90%</td><td>6%</td>
+                            </tr>
+                            <tr style="background-color: #8EAADB;">
+                              <td>Republic</td><td>Merchant</td><td>8</td><td>1</td><td>1</td><td>105%</td><td>9%</td><td>85%</td><td>3%</td>
+                            </tr>
+                            <tr style="background-color: #8EAADB;">
+                              <td>Republic</td><td>Free City</td><td>4</td><td>1</td><td>5</td><td>75%</td><td>8%</td><td>65%</td><td>2%</td>
+                            </tr>
+                            <tr style="background-color: #8EAADB;">
+                              <td>Republic</td><td>Technocratic</td><td>5</td><td>1</td><td>4</td><td>110%</td><td>9%</td><td>85%</td><td>6%</td>
+                            </tr>
+                            <tr style="background-color: #A8D08D;">
+                              <td>Democracy</td><td>Direct</td><td>2</td><td>1</td><td>7</td><td>85%</td><td>9%</td><td>115%</td><td>5%</td>
+                            </tr>
+                            <tr style="background-color: #A8D08D;">
+                              <td>Democracy</td><td>Representative</td><td>2</td><td>2</td><td>6</td><td>90%</td><td>9%</td><td>105%</td><td>7%</td>
+                            </tr>
+                            <tr style="background-color: #A8D08D;">
+                              <td>Democracy</td><td>Authoritarian</td><td>3</td><td>5</td><td>2</td><td>110%</td><td>12%</td><td>95%</td><td>8%</td>
+                            </tr>
+                            <tr style="background-color: #A8D08D;">
+                              <td>Democracy</td><td>Theocratic</td><td>3</td><td>1</td><td>6</td><td>90%</td><td>9%</td><td>120%</td><td>5%</td>
+                            </tr>
+                            <tr style="background-color: #A8D08D;">
+                              <td>Democracy</td><td>Military</td><td>1</td><td>7</td><td>2</td><td>110%</td><td>13%</td><td>100%</td><td>7%</td>
+                            </tr>
+                            <tr style="background-color: #EE0000;">
+                              <td>Equalism</td><td>Tusail</td><td>0</td><td>2</td><td>8</td><td>80%</td><td>8%</td><td>95%</td><td>10%</td>
+                            </tr>
+                            <tr style="background-color: #EE0000;">
+                              <td>Equalism</td><td>Wuxing</td><td>1</td><td>1</td><td>8</td><td>100%</td><td>9%</td><td>95%</td><td>10%</td>
+                            </tr>
+                            <tr style="background-color: #EE0000;">
+                              <td>Equalism</td><td>Populist</td><td>2</td><td>0</td><td>8</td><td>50%</td><td>3%</td><td>150%</td><td>1%</td>
+                            </tr>
+                            <tr style="background-color: #EE0000;">
+                              <td>Equalism</td><td>Nigmatūllic</td><td>2</td><td>1</td><td>7</td><td>105%</td><td>9%</td><td>90%</td><td>8%</td>
+                            </tr>
+                            <tr style="background-color: #EE0000;">
+                              <td>Equalism</td><td>Parish</td><td>5</td><td>4</td><td>1</td><td>65%</td><td>8%</td><td>100%</td><td>2%</td>
+                            </tr>
+                            <tr style="background-color: #EE0000;">
+                              <td>Equalism</td><td>Anarchic</td><td>1</td><td>1</td><td>5</td><td>125%</td><td>2%</td><td>175%</td><td>1%</td>
+                            </tr>
+                            <tr style="background-color: #D0CECE;">
+                              <td>Anarchy</td><td>Radical</td><td>1</td><td>1</td><td>1</td><td>200%</td><td>0%</td><td>300%</td><td>0%</td>
+                            </tr>
+                            <tr style="background-color: #D0CECE;">
+                              <td>Anarchy</td><td>Green</td><td>1</td><td>1</td><td>2</td><td>150%</td><td>0%</td><td>350%</td><td>0%</td>
+                            </tr>
+                            <tr style="background-color: #D0CECE;">
+                              <td>Anarchy</td><td>Postcolonial</td><td>2</td><td>3</td><td>1</td><td>125%</td><td>1%</td><td>400%</td><td>2%</td>
+                            </tr>
+                            <tr style="background-color: #D0CECE;">
+                              <td>Anarchy</td><td>Pacifistic</td><td>5</td><td>0</td><td>5</td><td>100%</td><td>0%</td><td>125%</td><td>5%</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      <p>Changing between Government Subtypes costs ten (10) Political Authority. Government Subtype can also be changed by Civil Wars of that subtype. Each change of Government Subtype carries a small chance of sparking an Anarchist revolution, modified by the level of National Unrest. Changing between Government Subtypes also increases the National Unrest by 5% for four (4) turns following the change. Government Subtype may only be changed once every five (5) turns. </p>
+                      <p>Changing between Government Types costs one (1) Political Authority for every five (5) average Development of the nation (rounded up), with a maximum cost of twenty-five (25). Government Type can also be changed by rebellions of that Type. Each change of Government Type carries a moderate chance of sparking an Anarchist revolution, modified by the level of National Unrest. Changing between Government Types also increases the National Unrest by 10% for eight (8) turns following the change. Government Type may only be changed once every ten (10) turns. A random Government Subtype is chosen from the eligible list.</p>
+                      <p>Anarchist governments cannot change Government Type or Government Subtype. Equalistic Anarchy does not count as an “anarchist” government.</p>
+                      <p>Nations begin with the “Tribal” Government Type and will be given the ability to switch Government Type once for free after reaching a total Development score of 50.</p>
+                      <p>Additionally, each Subtype has a unique buff, debuff, or ability associated with it. This is also true for the five overall government types, Monarchy, Republic, Democracy, Equalism, and Anarchy. A nation will gain the benefits of both Government Type and Subtype. The “Tribal” Government Type has no Subtype buff, debuff, or ability.</p>
+                      <table style="border-collapse: collapse; font-family: Georgia, sans-serif; color: black;">
+                        <caption style="color:white;">Government Type Unique Effects</caption>
+                        <thead>
+                        <tr>
+                            <th scope="col" style="background-color: #bfc3d3;">Government Type</th>
+                            <th scope="col" style="background-color: #bfc3d3;">Special Note</th>
+                        </tr>
                         </thead>
+
                         <tbody>
-                          <tr>
-                            <td class="tg-nqld"><span style="background-color:#E9C37F">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Tribal</span><span style="background-color:#E9C37F">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-nqld"><span style="background-color:#E9C37F">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Pre-Feudal</span><span style="background-color:#E9C37F">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-nqld"><span style="background-color:#E9C37F">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">3</span><span style="background-color:#E9C37F">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-nqld"><span style="background-color:#E9C37F">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">4</span><span style="background-color:#E9C37F">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-nqld"><span style="background-color:#E9C37F">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">3</span><span style="background-color:#E9C37F">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-nqld"><span style="background-color:#E9C37F">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">100%</span><span style="background-color:#E9C37F">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-nqld"><span style="background-color:#E9C37F">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">10%</span><span style="background-color:#E9C37F">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-nqld"><span style="background-color:#E9C37F">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">115%</span><span style="background-color:#E9C37F">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-z3q7"><span style="background-color:#E9C37F">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">3%</span><span style="background-color:#E9C37F">&nbsp;&nbsp;&nbsp;</span></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Monarchy</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Absolute</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">2</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">4</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">4</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">110%</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">12%</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">100%</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-of53"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">8%</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Monarchy</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Constitutional</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">3</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">3</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">4</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">95%</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">11%</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">100%</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-of53"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">4%</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Monarchy</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Feudal</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">3</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">4</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">3</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">100%</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">10%</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">100%</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-of53"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">6%</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Monarchy</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Theocratic</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">1</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">1</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">8</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">100%</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">10%</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">110%</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-of53"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">3%</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Monarchy</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Elective</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">2</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">3</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">5</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">108%</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">12%</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-h2sn"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">95%</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-of53"><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">3%</span><span style="background-color:#FFC000">&nbsp;&nbsp;&nbsp;</span></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Republic</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Patrician</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">3</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">2</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">5</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">100%</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">10%</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">95%</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-241j"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">5%</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Republic</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Confederal</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">1</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">2</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">7</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">90%</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">10%</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">105%</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-241j"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">6%</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Republic</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Crowned</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">2</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">4</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">4</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">95%</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">11%</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">100%</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-241j"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">8%</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Republic</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Federal</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">4</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">3</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">3</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">95%</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">10%</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">100%</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-241j"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">5%</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Republic </span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Unitary</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">2</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">2</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">6</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">95%</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">9%</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">90%</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-241j"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">6%</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Republic</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Merchant</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">8</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">1</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">1</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">105%</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">9%</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">85%</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-241j"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">3%</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Republic</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Free City</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">4</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">1</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">5</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">75%</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">8%</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">65%</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-241j"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">2%</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Republic</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Technocratic</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">5</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">1</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">4</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">110%</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">9%</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-1frd"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">85%</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-241j"><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">6%</span><span style="background-color:#8EAADB">&nbsp;&nbsp;&nbsp;</span></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Democracy</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Direct</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">2</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">1</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">7</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">85%</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">9%</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">115%</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-rijp"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">5%</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Democracy</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Representative</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">2</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">2</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">6</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">90%</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">9%</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">105%</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-rijp"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">7%</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Democracy</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Authoritarian</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">3</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">5</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">2</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">110%</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">12%</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">95%</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-rijp"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">8%</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Democracy</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Theocratic</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">3</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">1</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">6</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">90%</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">9%</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">120%</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-rijp"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">5%</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Democracy</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Military</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">1</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">7</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">2</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">110%</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">13%</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-pal7"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">100%</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-rijp"><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">7%</span><span style="background-color:#A8D08D">&nbsp;&nbsp;&nbsp;</span></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Equalism</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Tusail</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">0</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">2</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">8</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">80%</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">8%</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">95%</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-gfk9"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">10%</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Equalism</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Wuxing</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">1</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">1</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">8</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">100%</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">9%</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">95%</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-gfk9"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">10%</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Equalism</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Populist</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">2</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">0</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">8</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">50%</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">3%</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">150%</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-gfk9"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">1%</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Equalism</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Nigmatūllic </span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">2</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">1</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">7</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">105%</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">9%</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">90%</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-gfk9"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">8%</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Equalism </span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Parish</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">5</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">4</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">1</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">65%</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">8%</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">100%</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-gfk9"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">2%</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Equalism</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Anarchic</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">1</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">1</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">5</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">125%</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">2%</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-hrzr"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">175%</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-gfk9"><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">1%</span><span style="background-color:#E00">&nbsp;&nbsp;&nbsp;</span></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-frlw"><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Anarchy</span><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-frlw"><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Radical</span><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-frlw"><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">1</span><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-frlw"><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">1</span><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-frlw"><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">1</span><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-frlw"><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">200%</span><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-frlw"><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">0%</span><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-frlw"><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">300%</span><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-8i8s"><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">0%</span><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-frlw"><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Anarchy</span><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-frlw"><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Green</span><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-frlw"><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">1</span><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-frlw"><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">1</span><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-frlw"><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">2</span><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-frlw"><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">150%</span><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-frlw"><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">0%</span><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-frlw"><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">350%</span><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-8i8s"><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">0%</span><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-frlw"><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Anarchy</span><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-frlw"><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Postcolonial</span><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-frlw"><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">2</span><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-frlw"><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">3</span><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-frlw"><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">1</span><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-frlw"><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">125%</span><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-frlw"><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">1%</span><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-frlw"><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">400%</span><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-8i8s"><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">2%</span><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-frlw"><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Anarchy</span><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-frlw"><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">Pacifistic</span><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-frlw"><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">5</span><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-frlw"><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">0</span><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-frlw"><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">5</span><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-frlw"><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">100%</span><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-frlw"><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">0%</span><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-frlw"><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">125%</span><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span></td>
-                            <td class="tg-8i8s"><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span><br><span style="color:black">5%</span><span style="background-color:#D0CECE">&nbsp;&nbsp;&nbsp;</span></td>
-                          </tr>
-                        </tbody></table>
-              <p>Changing between Government Subtypes costs ten (10) Political Authority. Government Subtype can also be changed by Civil Wars of that subtype. Each change of Government Subtype carries a small chance of sparking an Anarchist revolution, modified by the level of National Unrest. Changing between Government Subtypes also increases the National Unrest by 5% for four (4) turns following the change. Government Subtype may only be changed once every five (5) turns. </p>
-              <p>Changing between Government Types costs one (1) Political Authority for every five (5) average Development of the nation (rounded up), with a maximum cost of twenty-five (25). Government Type can also be changed by rebellions of that Type. Each change of Government Type carries a moderate chance of sparking an Anarchist revolution, modified by the level of National Unrest. Changing between Government Types also increases the National Unrest by 10% for eight (8) turns following the change. Government Type may only be changed once every ten (10) turns. A random Government Subtype is chosen from the eligible list.</p>
-              <p>Anarchist governments cannot change Government Type or Government Subtype. Equalistic Anarchy does not count as an “anarchist” government.</p>
-              <p>Nations begin with the “Tribal” Government Type and will be given the ability to switch Government Type once for free after reaching a total Development score of 50.</p>
-              <p>Additionally, each Subtype has a unique buff, debuff, or ability associated with it. This is also true for the five overall government types, Monarchy, Republic, Democracy, Equalism, and Anarchy. A nation will gain the benefits of both Government Type and Subtype. The “Tribal” Government Type has no Subtype buff, debuff, or ability.</p>
+                        <tr style="background-color: #FFC000;">
+                            <td>Monarchy</td>
+                            <td>Capital Province gains an additional Fort level</td>
+                        </tr>
+                        <tr style="background-color: #8EAADB;">
+                            <td>Republic</td>
+                            <td>Cost of Diplomatic Relations reduced by two (minimum cost: 1)</td>
+                        </tr>
+                        <tr style="background-color: #A8D08D;">
+                            <td>Democracy</td>
+                            <td>Cost of Government Modification decreased by two (minimum cost: 1)</td>
+                        </tr>
+                        <tr style="background-color: #EE0000;">
+                            <td>Equalism</td>
+                            <td>Technology takes one less turn to research (minimum turns: 2), enemies can declare war for free</td>
+                        </tr>
+                        <tr style="background-color: #D0CECE;">
+                            <td>Anarchy</td>
+                            <td>Civil War chance reduced by 100%, Revolution chance increased by 25%</td>
+                        </tr>
+                        </tbody>
+                      </table>
+                      <table style="border-collapse: collapse; font-family: Georgia, sans-serif; color: black;">
+                        <caption style="color:white;">Government Subtype Unique Effects</caption>
+                        <thead>
+                        <tr>
+                            <th scope="col" style="background-color: #bfc3d3;">Government Type</th>
+                            <th scope="col" style="background-color: #bfc3d3;">Subtype</th>
+                            <th scope="col" style="background-color: #bfc3d3;">Special Note</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr style="background-color: #FFC000;">
+                            <td>Monarchy</td>
+                            <td>Absolute</td>
+                            <td>Cost of Forts reduced by one</td>
+                        </tr>
+                        <tr style="background-color: #FFC000;">
+                            <td>Monarchy</td>
+                            <td>Constitutional</td>
+                            <td>Unrest impact on Political Authority reduced by 10%</td>
+                        </tr>
+                        <tr style="background-color: #FFC000;">
+                            <td>Monarchy</td>
+                            <td>Feudal</td>
+                            <td>Recruiting Generals does not cost Military Authority</td>
+                        </tr>
+                        <tr style="background-color: #FFC000;">
+                            <td>Monarchy</td>
+                            <td>Theocratic</td>
+                            <td>Cost of Temples reduced by two</td>
+                        </tr>
+                        <tr style="background-color: #FFC000;">
+                            <td>Monarchy</td>
+                            <td>Elective</td>
+                            <td>Likelihood of Civil War reduced by 25%</td>
+                        </tr>
+                        <tr style="background-color: #8EAADB;">
+                            <td>Republic</td>
+                            <td>Patrician</td>
+                            <td>Cost of Cities reduced by one</td>
+                        </tr>
+                        <tr style="background-color: #8EAADB;">
+                            <td>Republic</td>
+                            <td>Confederal</td>
+                            <td>Colonization cost reduced by one</td>
+                        </tr>
+                        <tr style="background-color: #8EAADB;">
+                            <td>Republic</td>
+                            <td>Crowned</td>
+                            <td>Cost of Government Modification reduced by one</td>
+                        </tr>
+                        <tr style="background-color: #8EAADB;">
+                            <td>Republic</td>
+                            <td>Federal</td>
+                            <td>Base Trade Good Value access set at 20%</td>
+                        </tr>
+                        <tr style="background-color: #8EAADB;">
+                            <td>Republic</td>
+                            <td>Unitary</td>
+                            <td>Taxation Unrest impact reduced by 10%</td>
+                        </tr>
+                        <tr style="background-color: #8EAADB;">
+                            <td>Republic</td>
+                            <td>Merchant</td>
+                            <td>Cost of Ports reduced by two, cannot issue Embargoes</td>
+                        </tr>
+                        <tr style="background-color: #8EAADB;">
+                            <td>Republic</td>
+                            <td>Free City</td>
+                            <td>Cannot build multiple cities, Citizen growth boosted by 25%, base Overextension set at 20</td>
+                        </tr>
+                        <tr style="background-color: #8EAADB;">
+                            <td>Republic</td>
+                            <td>Technocratic</td>
+                            <td>Technology takes one less turn to research (minimum: 4)</td>
+                        </tr>
+                        <tr style="background-color: #A8D08D;">
+                            <td>Democracy</td>
+                            <td>Direct</td>
+                            <td>Likelihood of Civil War reduced by 75%, cannot declare war</td>
+                        </tr>
+                        <tr style="background-color: #A8D08D;">
+                            <td>Democracy</td>
+                            <td>Representative</td>
+                            <td>Political technology takes two less turns to research (minimum: 4)</td>
+                        </tr>
+                        <tr style="background-color: #A8D08D;">
+                            <td>Democracy</td>
+                            <td>Authoritarian</td>
+                            <td>Capital city receives three base Fort level, Puppet Management costs reduced by 1 (minimum: 1), cannot receive diplomatic relations</td>
+                        </tr>
+                        <tr style="background-color: #A8D08D;">
+                            <td>Democracy</td>
+                            <td>Theocratic</td>
+                            <td>Cost of Temples reduced by two, cost of Government Modification increased by one</td>
+                        </tr>
+                        <tr style="background-color: #A8D08D;">
+                            <td>Democracy</td>
+                            <td>Military</td>
+                            <td>Military technology takes two less turns to research (minimum: 4)</td>
+                        </tr>
+                        <tr style="background-color: #EE0000;">
+                            <td>Equalism</td>
+                            <td>Tusail</td>
+                            <td>No Economic Authority, cannot Colonize, Structures cost Political Authority, Recruitment costs Military Authority, Cost of Roads and Bridges reduced by one</td>
+                        </tr>
+                        <tr style="background-color: #EE0000;">
+                            <td>Equalism</td>
+                            <td>Wuxing</td>
+                            <td>Cannot use Government Modification, cannot build Universities, cannot designate a Capital, Citizenry contribute 75% more to Trade Good Production, Colonization costs 50% less political power</td>
+                        </tr>
+                        <tr style="background-color: #EE0000;">
+                            <td>Equalism</td>
+                            <td>Populist</td>
+                            <td>Cannot declare war, cannot use Government Modification, Bridges and Roads cost 50% less Economic Authority, Citizenry consumes 50% less Political Authority</td>
+                        </tr>
+                        <tr style="background-color: #EE0000;">
+                            <td>Equalism</td>
+                            <td>Nigmatūllic</td>
+                            <td>Cost of Temples reduced by one, cannot build Forts</td>
+                        </tr>
+                        <tr style="background-color: #EE0000;">
+                            <td>Equalism</td>
+                            <td>Parish</td>
+                            <td>Citizenry Trade Good Production increased by 50%, cannot use any voluntary diplomatic interaction, cannot use Government Modification, Political Authority Development cost reduced by 25%</td>
+                        </tr>
+                        <tr style="background-color: #EE0000;">
+                            <td>Equalism</td>
+                            <td>Anarchic</td>
+                            <td>Cannot take any action except declare war on non-Equalist nations and accept diplomatic interactions with other Equalist nations</td>
+                        </tr>
+                        <tr style="background-color: #D0CECE;">
+                            <td>Anarchy</td>
+                            <td>Radical</td>
+                            <td>Cannot take any action except build Structures, invest in Development, and research Technology</td>
+                        </tr>
+                        <tr style="background-color: #D0CECE;">
+                            <td>Anarchy</td>
+                            <td>Primitivist</td>
+                            <td>Cannot take any action except build Structures and invest in Development.</td>
+                        </tr>
+                        <tr style="background-color: #D0CECE;">
+                            <td>Anarchy</td>
+                            <td>Postcolonial</td>
+                            <td>Cannot take any action except build Structures, invest in Development, research Technology, declaring war on any non-Equalist, non-Anarchic nation, and diplomatic interactions with any Equalist or Anarchic nations</td>
+                        </tr>
+                        <tr style="background-color: #D0CECE;">
+                            <td>Anarchy</td>
+                            <td>Pacifistic</td>
+                            <td>Cannot make any diplomatic interaction except Diplomatic Relations, cannot Colonize, and cannot maintain any troops or Military Authority</td>
+                        </tr>
+                        </tbody>
+                      </table>
+                  <h5 id="national-unrest">National Unrest & Internal Conflicts</h5>
+                      <p>Citizens who are ignored, slighted, abused, or simply unhappy will eventually rise up against their government and seek to overthrow or alter it in their favor. Nations must manage their National Unrest in order to assuage (or encourage) such violence.</p>
+                      <p><b>National Unrest</b> represents the unhappiness and outrage of Citizenry within a nation. High National Unrest is an indication that the current government and policies are causing the Citizenry of a nation to foment a possible rebellion against the government. High National Unrest could result in a <b>Rebellion</b>, <b>Revolution</b>, or <b>Civil War</b>, all of which have negative consequences. National Unrest also has debuffing effects on national resources, such as Citizenry Growth, Manpower, and Trade Good Production.
+                                  National Unrest is raised by high Taxation and is reduced by Public Spending.</p>
+                      <p><b>Rebellions, Civil Wars,</b> and <b>Revolutions </b> are armed conflicts wherein the Citizenry of a nation attempts to take the reins of power or alter some aspect of a nation. These conflicts will result in at least half of all Provinces in a nation being occupied by rebel forces. Rebels will occupy a certain percentage of a nation’s Provinces based on the National Unrest level. Rebels will appear in strength proportional to the National Unrest level.
+                          If a nation has more than 20% of its Provinces (minimum 5) occupied by rebel forces for more than six turns, the rebels declare victory, and the government is overthrown according to the nature of the conflict. </p>
+                      <p>A <b>Rebellion</b> is a violent attempt by the Citizenry to enforce their demands on the Government. A Rebellion can occur when National Unrest is at or above 50. If a Rebellion is successful, the national Taxation level will be reduced to 5%, the Manpower level will be reduced by 10%, each Authority will be reduced by one, and Government Modification will be disabled. These effects will last for ten (10) turns.</p>
+                      <p>A <b>Civil War</b> is an attempt by the Citizenry to alter the Government Subtype of a nation. A Civil War can occur when National Unrest is at or above 65. If a Civil War is successful, the Government Subtype will be changed according to the type of Civil War sparked. Civil Wars can only alter the Subtype within the current Government Type of the nation. Additionally, each Authority will be reduced by two (2) for four (4) turns.</p>
+                      <p>A <b>Revolution</b> is an attempt by the Citizenry to alter the Government Type of a nation. A Revolution can occur when National Unrest is at or above 70 or when changing Government Type or Subtype. If a Revolution is successful, the Government Type will be changed according to the type of Revolution sparked. Additionally, each Authority will be reduced by two (2) for five (5) turns. Revolution is the only method by which a nation may become Anarchic or remove the Anarchic government type.</p>
           </div>
         </div>
     </body>
 </html>
+    
