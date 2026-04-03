@@ -65,7 +65,6 @@ html {
   /* Set the font globally */
   font-family: Georgia, serif;
   scroll-behavior: smooth;
-  display: flex;
   padding-left: 15%;
 }
 
@@ -829,6 +828,7 @@ div.notice p:last-of-type {
   align-self: flex-start;
   max-height: 100vh;
   overflow-y: auto;
+  overflow-x: visible;
 }
 
 /* The navigation menu links */
