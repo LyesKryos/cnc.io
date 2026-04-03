@@ -891,6 +891,17 @@ body.nav-open {
   text-align: left;
 }
 
+.sectionnav p {
+  padding: 6px 8px;
+  text-decoration: none;
+  font-size: medium;
+  color: var(--text);
+  display: block;
+  border-bottom: thin solid white;
+  font-family: "Georgia", serif;
+  text-align: center;
+}
+
 .sectionnav a:hover {
   color: #c00000;
   text-decoration: none;
