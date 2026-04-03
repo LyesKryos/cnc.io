@@ -830,6 +830,7 @@ div.notice p:last-of-type {
   align-self: flex-start;
   max-height: 100vh;
   overflow: auto;
+  max-width: 180px
 }
 
 /* The navigation menu links */
@@ -878,6 +879,7 @@ body.nav-open {
   overflow-y: auto;
   padding-left: 25px;
   align-self: flex-start;
+  max-width: 180px;
 }
 
 .sectionnav a {
