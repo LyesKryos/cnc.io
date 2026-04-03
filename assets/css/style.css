@@ -887,7 +887,7 @@ body.nav-open {
   display: block;
   border-bottom: thin dotted white;
   font-family: "Georgia", serif;
-  font-align: left;
+  text-align: left;
 }
 
 .sectionnav a:hover {
