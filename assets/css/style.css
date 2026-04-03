@@ -868,6 +868,39 @@ body.nav-open {
     display: none;
 }
 
+.sectionnav {
+  width: 15%;
+  flex-shrink: 0;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  padding-left: 25px;
+  align-self: flex-start;
+}
+
+.sectionnav a {
+  padding: 6px 8px;
+  text-decoration: none;
+  font-size: small;
+  color: var(--text);
+  display: block;
+  border-bottom: thin dotted white;
+  font-family: "Georgia", serif;
+}
+
+.sectionnav a:hover {
+  color: #c00000;
+  text-decoration: none;
+}
+
+/* Hide on mobile */
+@media only screen and (max-width: 720px) {
+  .sectionnav {
+    display: none;
+  }
+}
+
 
 /*MOBILE DESIGN*/
 
