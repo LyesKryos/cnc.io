@@ -65,7 +65,7 @@ html {
   /* Set the font globally */
   font-family: Georgia, serif;
   scroll-behavior: smooth;
-  padding-left: 15%;
+  place-items: center;
 }
 
 .content-wrapper {
