@@ -93,6 +93,7 @@ body {
   margin: 2% 0;
   padding: 0 1rem;
   text-align: justify;
+  overflow: visible;
 }
 
 body > * {
@@ -130,6 +131,7 @@ body > header p {
   display: flex;
   justify-content: center;
   padding: 0 2rem;
+  align-items: flex-start;
 }
 
 /* The actual content column, centered in the remaining space */
@@ -827,8 +829,7 @@ div.notice p:last-of-type {
   padding-right: 25px;
   align-self: flex-start;
   max-height: 100vh;
-  overflow-y: auto;
-  overflow-x: visible;
+  overflow: auto;
 }
 
 /* The navigation menu links */
