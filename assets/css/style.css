@@ -663,7 +663,7 @@ pre span,
 kbd,
 samp {
   font-family: var(--mono-font);
-  color: var(--code);
+  color: #db4e4e;
 }
 
 kbd {
