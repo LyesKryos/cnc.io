@@ -29,32 +29,44 @@
           <div class="main">
             <h2>Commands and Mechanics</h2>
               <p>The entire Command & Conquest system relies on the use of the Shard bot and the #command_and_conquest channel found on the Thegye Discord. All commands and mechanics are listed here for ease of reference. Review the <a href="guide">Guide</a> and <a href="manual">Manual</a> for additional information.</p>
-              <p><b>Note:</b> all commands come with complete descriptions within Discord. You can view all the C&C related commands by typing <pre>/cnc</pre>. Most commands are not usable in DMs.</p>
+              <p><b>Note:</b> all commands come with complete descriptions within Discord. You can view all the C&C related commands by typing <code>/cnc</code>. Most commands are not usable in DMs.</p>
               <h4 id="base">Base Commands</h4>
-              <p><pre>/cnc register [nation name] [color]</pre>: this command registers you as a new user. The first requirement is the <b>nation name</b> variable, which should be a creative and interesting name. It should not include a prefix, as that is set by the Government Subtype of the nation. 
-              The <b>color</b> variable should be a hex code (e.g., #481274). If the color provided is too close to a taken or reserved color, the register command will fail.</p>
-              <p><pre>/cnc info</pre>: this command sends the current information about the entire Command & Conquest system.</p>
-              <p><pre>/cnc turn</pre>: this command sends the current turn, as well as when the next turn update is in your timezone.</p>
-              <p><pre>/cnc view map</pre>: this command opens the map menu, which provides four map modes: <b>Main</b> (which displays the base map), <b>Terrain</b> (which displays the terrain without numbers), <b>Geography</b> (which displays the names of locations), and <b>Nation</b> (which displays the owned/occupied territory of all nations). Click each button to display each mode.</p>
-              <p><pre>/cnc view locate_province [province id]</pre>: this command generates a map file highlighting the specific province provided in a bright pink color to help users locate a specific province on the map.</p>
-              <p><pre>/cnc view market_values</pre>: this command displays the current market values for each of the 30 Trade Goods produced across the map.</p>
-              <p><pre>/cnc view good_production</pre>: this command displays the current total production of the 30 Trade Goods.</p>
+              <p><code>/cnc register [nation name] [color]</code>: this command registers you as a new user. The first requirement is the <code>nation name</code> variable, which should be a creative and interesting name. It should not include a prefix, as that is set by the Government Subtype of the nation. 
+              The <code>color</code> variable should be a hex code (e.g., #481274). If the color provided is too close to a taken or reserved color, the register command will fail.</p>
+              <p><code>/cnc info</code>: this command sends the current information about the entire Command & Conquest system.</p>
+              <p><code>/cnc turn</code>: this command sends the current turn, as well as when the next turn update is in your timezone.</p>
+              <p><code>/cnc view map</code>: this command opens the map menu, which provides four map modes: <b>Main</b> (which displays the base map), <b>Terrain</b> (which displays the terrain without numbers), <b>Geography</b> (which displays the names of locations), and <b>Nation</b> (which displays the owned/occupied territory of all nations). Click each button to display each mode.</p>
+              <p><code>/cnc view locate_province [province id]</code>: this command generates a map file highlighting the specific province provided in a bright pink color to help users locate a specific province on the map.</p>
+              <p><code>/cnc view market_values</code>: this command displays the current market values for each of the 30 Trade Goods produced across the map.</p>
+              <p><code>/cnc view good_production</code>: this command displays the current total production of the 30 Trade Goods.</p>
               <h4 id="nation-province">Nation and Province Commands</h4>
-              <p><pre>/cnc nation (nation name OR user)</pre>: this command displays information about the nation or user selected. If the inputs are left blank, it will show information about your nation. Calling other nations will display two buttons: <b>Cooperative Relations</b> and <b>Hostile Relations.</b> Each will pull up the corresponding menu. 
+              <p><code>/cnc nation (nation name OR user)</code>: this command displays information about the nation or user selected. If the inputs are left blank, it will show information about your nation. Calling other nations will display two buttons: <b>Cooperative Relations</b> and <b>Hostile Relations.</b> Each will pull up the corresponding menu. 
               Cooperative Relations will display four base buttons: <b>Diplomatic Relations</b>, <b>Military Alliance</b>, <b>Trade Pact</b>, and <b>Military Access</b>. The <b>Propose Subjugation</b> and <b>Manage Puppet</b> buttons may display if applicable. 
               Hostile Relations will display two buttons: <b>Embargo</b> and <b>War</b>.</p>
-              <p><pre>/cnc dossier</pre>: this command privately displays detailed information about your nation using six buttons: <b>Summary</b>, <b>Authority</b>, <b>Military</b>, <b>Economy</b>, <b>Government</b>, and <b>Relations</b>. Click each button to display each menu.</p>
-              <p><pre>/cnc strategic_view</pre>: this command privately displays detailed information about all of your provinces.</p>
-              <p><pre>/cnc province [province id]</pre>: this command displays information about the given province. The status of the province will open different button menus. Provinces owned by you will display five buttonds: <b>Construct</b>, <b>Deconstruct</b>, <b>Boost Development</b>, <b>Appropriate Development</b>, and <b>Abandon Province</b>. 
+              <p><code>/cnc dossier</code>: this command privately displays detailed information about your nation using six buttons: <b>Summary</b>, <b>Authority</b>, <b>Military</b>, <b>Economy</b>, <b>Government</b>, and <b>Relations</b>. Click each button to display each menu.</p>
+              <p><code>/cnc strategic_view</code>: this command privately displays detailed information about all of your provinces.</p>
+              <p><code>/cnc province [province id]</code>: this command displays information about the given province. The status of the province will open different button menus. Provinces owned by you will display five buttonds: <b>Construct</b>, <b>Deconstruct</b>, <b>Boost Development</b>, <b>Appropriate Development</b>, and <b>Abandon Province</b>. 
               Provinces owned by others will display no menu. Provinces owned by natives will display the <b>Colonize</b> button if you Researched the Colonization technology.</p>
               <h4 id="army=gemeral">Army and General Commands</h4>
-              <p><pre>/cnc army [army id]</pre>: this command displays information about the specified army. Armies that are owned by you will appear with equal signs in the suggested list. Armies owned by you display four buttons: <b>Recruit</b>, <b>Disband</b>, <b>Assign General</b>, and <b>Embark/Disembark</b>, if you have Researched the Sailing technology. Use the Assign General button to recruit and reassign Generals.</p>
-              <p><pre>/cnc general [general id]</pre>: this command displays information about the specified general.</p>
-              <p><pre>/cnc create_army [posting] (recruit_troops)</pre>: this command creates a new army in the specified location. You can optionally add a number of troops to recruit directly into the army.</p>
-              <p><pre>/cnc move_army [army id] [move_to]</pre>: this command will move the specified army from its current location to the specified location, if it has enough movement. If it is blocked by an enemy army, fort, or terrain, it will either pathfind around the obstacle or fail to move. If an enemy army or armies are in the location, a Battle will initiate. Embarked armies will attempt to move by water.</p>
-              <p><pre>/cnc army_report</pre>: this command will privately display information about all of your armies.</p>
-              <h4>Wars</h4>
-              <p><pre>/cnc view wars (view_all)</pre>: this command will display all wars your nation is currently engaged in. Selecting "True" for view_all will display all ongoing wars, regardless of whether you are involved.</p>
+              <p><code>/cnc army [army id]</code>: this command displays information about the specified army. Armies that are owned by you will appear with equal signs in the suggested list. Armies owned by you display four buttons: <b>Recruit</b>, <b>Disband</b>, <b>Assign General</b>, and <b>Embark/Disembark</b>, if you have Researched the Sailing technology. Use the Assign General button to recruit and reassign Generals.</p>
+              <p><code>/cnc general [general id]</code>: this command displays information about the specified general.</p>
+              <p><code>/cnc create_army [posting] (recruit_troops)</code>: this command creates a new army in the specified location. You can optionally add a number of troops to recruit directly into the army.</p>
+              <p><code>/cnc move_army [army id] [move_to]</code>: this command will move the specified army from its current location to the specified location, if it has enough movement. If it is blocked by an enemy army, fort, or terrain, it will either pathfind around the obstacle or fail to move. If an enemy army or armies are in the location, a Battle will initiate. Embarked armies will attempt to move by water.</p>
+              <p><code>/cnc army_report</code>: this command will privately display information about all of your armies.</p>
+              <h4 id="wars">War Commands</h4>
+              <p><code>/cnc view wars (view_all)</code>: this command will display all wars your nation is currently engaged in. Selecting "True" for <code>view_all</code> will display all ongoing wars, regardless of whether you are involved.</p>
+              <p><code>/cnc war_info [war id]</code>: this command will display information about the specified war.</p>
+              <h4 id="tech">Technology and Research Commands</h4>
+              <p><code>/cnc tech [tech]</code>: this command displays information about the specified technology, including prerequisites and effects.</p>
+              <p><code>/cnc research [tech]</code>: this command begins researching the specified technology.</p>\
+              <p><code>/cnc researching</code>: this command displays the current research. Selecting the <b>Cancel</b> button will end any current research.</p>
+              <h4 id="government">Government Commands</h4>
+              <p><code>/cnc government</code>: this command opens the Government Management menu with four buttons: <b>Taxation</b> (for managing your tax level), <b>Public Spending</b> (for managing current public spending), <b>Military Upkeep</b> (for managing current military upkeep), and <b>Boost Stability</b> (for increasing current stability).</p>
+              <p><code>/cnc reform_government</code>: this command opens the Government Reform menu with three buttons: <b>Reform Government Type</b> (for changing your overall government type), <b>Reform Government Subtype</b> (for changing your specific government subtype), and <b>View Governments</b> (for browsing the different Government Types and Subtypes).</p>
+              <p><code>/cnc designate_capital [province id]</code>: this command establishes the national capital in the specified province.</p>
+              <h4 id="gp">Great Power Commands</h4>
+              <p><code>/cnc gp_score</code>: this command displays your nation's current Great Power score calculation.</p>
+              <p><code>/cnc great_powers</code>: this command displays all current nations in order of Great Power score.</p>              
           </div>
         </div>
     </body>
